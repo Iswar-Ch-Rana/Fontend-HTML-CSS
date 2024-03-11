@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .box1 {
+            margin-bottom: 10px;
+            border: 1px solid black;
+            height: 200px;
+            width: 150px;
+            background-image: linear-gradient(red,blue);
+            background-image: linear-gradient(to right,red,blue);
+            background-image: linear-gradient(to bottom,red,blue);
+            background-image: linear-gradient(to bottom right,red,blue);
+        }
+        .box2 {
+            margin-bottom: 10px;
+            border: 1px solid black;
+            height: 200px;
+            width: 150px;
+            background-image: radial-gradient(green,yellow);
+            background-image: radial-gradient(green,blue,orange);
+            background-image: radial-gradient(circle,green,blue,orange);
+            background-image: radial-gradient(rgb(235, 30, 173) 5% , green 5%);
+        }
+        .box3 {
+            border: 1px solid black;
+            height: 200px;
+            width: 150px;
+            background-image: linear-gradient(red,blue);
+            background-image: linear-gradient(to right,red,blue);
+            background-image: linear-gradient(to bottom,red,blue);
+            background-image: linear-gradient(to bottom right,red,blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Linear Gradient -->
+    <div class="box1">This is a div Linear</div>
+    <!-- Radial Gradient -->
+    <div class="box2">This is a div Radial</div>
+    <!-- Conic Gradient -->
+    <div class="box3">This is a div Conic</div>
+</body>
+</html>

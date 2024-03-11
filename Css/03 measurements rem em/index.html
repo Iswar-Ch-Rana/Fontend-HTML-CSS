@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em and rem Example</title>
+
+    <style>
+      /* Set the base font size for the document */
+      html {
+        font-size: 16px; /* 1rem is equal to 16px */
+      }
+
+      /* Style for paragraphs using em units */
+      .em-example {
+        font-size: 1.2em; /* 1.2em is 1.2 times the font size of the parent element */
+      }
+
+      /* Style for paragraphs using rem units */
+      .rem-example {
+        font-size: 1.2rem; /* 1.5rem is 1.5 times the font size of the root element */
+      }
+
+      .container {
+        font-size: 40px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="em-example">Using em units</p>
+      <p class="rem-example">Using rem units</p>
+    </div>
+  </body>
+</html>
