@@ -1,0 +1,126 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+
+    /************Flex Direction************/
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /**************Flex Wrap**************/
+
+    /* Mobile re responsive pain */
+    /* flex-wrap: wrap; */
+
+
+    /*************Flex Wrap*************/
+    /* Two in one line */
+    flex-flow: row wrap;
+
+    /*************Justify Content *************/
+
+
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between; */
+    
+
+    /*************** Align Items ***************/
+    
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline; */
+    
+    /**************** Align Content ****************/
+
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    background-color: cadetblue;
+    border: 2px solid black;
+    /* margin: 2px ; */
+    /* width: 70px ; */
+    /* Same as width but can change accoding to the content  */
+    flex-basis: 100px;
+    /* flex-grow: 1; */
+}
+ #box1{
+    order: 1;
+    align-self: flex-end;
+    align-self: auto;
+    flex-shrink: 4;
+}
+/*#box3{
+    order: 3;
+}
+#box2{
+    order: 2;
+}
+#box4{
+    order: 4;
+} */
+
+
+
+
+
+/***************** COMMENT  ******************/
+
+.hello {
+    
+    /* by default , the container has a direction of row. */
+    flex-direction: row;
+    flex-wrap: nowrap; /*wrap , no wrap , wrap-reverse*/
+    flex-flow: row wrap; /* Combines flex direction and flex wrap */
+
+    /*   JUSITFY-CONTENT   */
+    justify-content: flex-start;  /* all flex items  are packed to the start line accoding to main axis */
+    justify-content: flex-end;   /* all flex items are packed to the end line according to the main axis */
+    justify-content: center;     /* All flex items are justified along the line, aligning the lines in the center. */
+    justify-content: space-around; /* distribute the space around each item. The free space is divided based on this property */
+    justify-content: space-between; /* distribute the free space equally in between each item, but pushes the last and first item to first and last */
+    justify-content: space-evenly; /* distribute the space evenly among the flex item along the main axis */
+
+
+    /*   ALIGN-ITEMS    */
+    
+    align-items: flex-start;       /* All flex items are aligned at the start of the cross axis */
+    align-items: flex-end;         /* All flex items are aligned at the end of the cross axis */
+    align-items: center;           /* All flex items are centered along the cross axis */
+    align-items: stretch;          /* The flex items are stretched to fit the cross axis, if not enough room */
+    align-items: baseline;         /* The first line of text in each flex item is aligned with the first line of text in one line */
+    
+    
+    /*   ALIGN-CONTENT  */
+    align-items: center; 
+    justify-content: center;
+    align-content: flex-start;       /* The lines are packed together at the start of the cross axis */
+    align-content: flex-end;        /* The lines are packed together at the end of the cross axis */
+    align-content: space-between;    /* The lines are distributed with equal space between  them along the cross axis */
+    align-content: space-around;    /* Distributes the space equally in between each line along the cross axis */
+    align-content: space-evenly;    /* Distributes the lines evenly in the cross axis */
+}
+
