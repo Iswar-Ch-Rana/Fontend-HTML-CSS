@@ -1,0 +1,34 @@
+/* *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+} */
+
+.container {
+  background-color: brown;
+  height: 700px;
+  border: 1px solid black;
+  display: grid;
+
+  /* grid-template-columns: 25% 25% 25% 25% ; */ 
+  /* Create 4 columns of 4 equal size */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Create 5 rows of 5 equal size */
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+}
+.box {
+  background-color: aqua;
+  border: 3px solid black;
+}
+#box-1{
+    /* Spaning a box from start to 2 box to write*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+#box-4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
