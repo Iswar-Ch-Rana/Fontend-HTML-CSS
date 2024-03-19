@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Bellota+Text:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Poltawski+Nowy:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ACE2E1;
+    margin: 3%;
+}
+
+
+
+.box {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 10); /* Adjust values as needed */
+    border-radius: 1rem;
+}
+
+.container {
+    display: grid;
+    margin: 1rem;
+
+    grid-template-columns: repeat(7,1fr);
+    grid-template-areas: 
+    "as as wo wo wo wo wo"
+    "as as ed ed ed ed ed";
+    gap: 1.5rem;
+    min-height: 100vh;
+    
+}
+
+.box {
+    /* border: 1px solid black; */
+    background-color: #d8d8d8;
+}
+
+#box1 {
+    grid-area: as;
+}
+#box2 {
+    grid-area: wo;
+}
+#box3 {
+    grid-area: ed;
+}   
+
+.image-container {
+    position: relative;
+}
+
+.image-container figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity */
+    color: #fff; /* Adjust text color */
+    padding: 8px; /* Adjust padding */
+    box-sizing: border-box;
+    text-align: center; /* Center align text */
+}
+
+img {
+    display: block;
+    /* max-width: 100%; */
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card{
+    scroll-margin-top: 8rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 586px){
+    .container{
+        margin: 1rem;
+
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "as"
+        "wo"
+        "ed";
+        row-gap: 1rem;
+    }
+}
+
+/* Details  */
+.profile-about li {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.profile-about li i {
+	font-size: 1.2rem;
+}
+
+/* removing  the bullet points from list items with CSS */
+ul#otis {
+    list-style-type: none;
+}
+
+.profile1{
+    border-bottom: 1px solid rgb(105, 86, 86);
+    padding: 0.8rem;
+}
+
+.profile2 {
+    border-bottom: 1px solid rgb(105, 86, 86);
+    padding: 0.8rem;
+}
+
+.profile3 {
+    padding: 0.8rem;
+}
+
+
+/* Progress Bar*/
+.progress-bar {
+	width: 100%;
+	height: 17px;
+	background: rgba(117, 117, 117, 0.2);
+	border-radius: 10px;
+}
+
+.progress-bar .progress {
+	height: 100%;
+	background: #1364d5;
+	border-radius: 10px;
+	font-size: 0.8rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-bar .adobe {
+	width: 90%;
+}
+
+.progress-bar .photo {
+	width: 80%;
+}
+
+.progress-bar .illustrator {
+	width: 70%;
+}
+
+.progress-bar .media {
+	width: 45%;
+}
+
+i {
+    margin-right: 15px;
+    color: #401F71;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* box2 */
+
+.box-work {
+    padding: 50px;
+}
+.work {
+    /* color: whit */
+    margin: 1rem;
+}
+.date {
+    color: #910A67;
+    margin: 1rem 0;
+}
+.curr {
+    background-color: #910A67;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 5px ;
+}
+.para {
+    padding: 1rem 0 ;
+    font-size: large;
+}
+
+/* box3 */
+
+.education{
+    padding: 50px;
+}
+
+.college {
+    /* color: whit */
+    margin: 1rem;
+}
+
+
