@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>DOM learning</title>
+		<style>
+			.bg-black {
+				background-color: #212121;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="bg-black">
+		<div>
+			<h1 id="title" class="heading">
+				DOM learning on Chai aur code
+				<span style="display: none">test text</span>
+			</h1>
+			<h2>Lorem ipsum dolor sit.</h2>
+			<h2>Lorem ipsum dolor sit.</h2>
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet.</p>
+			<input type="password" name="" id="" />
+
+			<ul>
+				<li class="list-item">one</li>
+				<li class="list-item">two</li>
+				<li class="list-item">three</li>
+				<li class="list-item">four</li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+<!-- 
+    document.getElementById('title')
+    document.getElementById('title').id
+    document.getElementById('title').className
+    document.getElementById('title').getAttribute('id')
+    document.getElementById('title').setAttribute('class' ,'custom-class') // This Will replace the previous attribute
+    title.style.backgroundColor = 'green'           // we can change style like this
+    title.innerText             // it will give only visible text
+    title.textContent           // it will show all hidden and visible text
+    title.innerHTML             // it will give innter content with its tag if tag is avalable.
+
+    /*** Query ***/
+    document.querySelector('h2')     // Give 1st h2 element
+    document.querySelectorAll('h2')   // Give node list of all h2 elements [h2,h2,h2] not 
+
+    document.getElementsByClassName('list-item')  // this will return HTMLCollection we have to convert this to an array
+    const arr = Array.from(lis)
+    arr.forEach((li) => console.log(li))
+-->
