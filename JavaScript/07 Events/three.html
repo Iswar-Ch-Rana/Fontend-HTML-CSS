@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Zessta Software Services</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayZessta = (str) => {
+        console.log(str, Date.now());
+    };
+
+    let intervalId;
+
+    const startBtn = document.getElementById('start');
+    const stopBtn = document.getElementById('stop');
+
+    startBtn.addEventListener("click", () => {
+        if (!intervalId) {
+            intervalId = setInterval(sayZessta, 2000, 'Zessta is the best!');
+        }
+    });
+
+    stopBtn.addEventListener("click", () => {
+        clearInterval(intervalId);
+        intervalId = null;
+    });
+
+</script>
+</html>
+
