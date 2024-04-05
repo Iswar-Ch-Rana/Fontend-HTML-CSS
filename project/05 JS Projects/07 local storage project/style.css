@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --form-background: #ffffff;
+    --form-border: #cccccc;
+    --button-background: #6c5ce7;
+    --button-hover: #554fb8;
+    --update-button-background: #ff9b6e;
+    --update-button-hover: #ff6a00;
+    --delete-button-background: #ef5350;
+    --delete-button-hover: #f81100;
+}
+
+.dark-mode {
+    --background-color: #141414;
+    --text-color: #ffffff;
+    --form-background: #1c1c1c;
+    --form-border: #333333;
+    --button-background: #6c5ce7;
+    --button-hover: #554fb8;
+    --update-button-background: #ff9b6e;
+    --update-button-hover: #ff6a00;
+    --delete-button-background: #ef5350;
+    --delete-button-hover: #f81100;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #6c4079, #fc2c77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.form-container {
+    background-color: var(--form-background);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    font-family: inherit;
+    width: 100%;
+    background-color: var(--form-background);
+    color: var(--text-color);
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    margin-left: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-background);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--button-hover);
+}
+
+.container {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.box {
+    background-color: var(--form-background);
+    width: 350px;
+    height: 505px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update {
+    background-color: var(--update-button-background);
+}
+
+.update:hover {
+    background-color: var(--update-button-hover);
+}
+
+.delete {
+    background-color: var(--delete-button-background);
+}
+
+.delete:hover {
+    background-color: var(--delete-button-hover);
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--button-hover);
+}
+
+
